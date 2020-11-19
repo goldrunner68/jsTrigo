@@ -6,9 +6,9 @@ import {boule} from "./jsMathTrigono/boule.js";
 
 
 onload = () => {
-let el1 = new horloge("blue");
-console.log (el1);
+ horloge();
 boule();
+
 
 
 

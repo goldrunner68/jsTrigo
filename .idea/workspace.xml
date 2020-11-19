@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83af3a16-639f-428e-9776-cd3909467627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jsMathTrigono/boule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsMathTrigono/horloge.js" afterDir="false" />
+    <list default="true" id="83af3a16-639f-428e-9776-cd3909467627" name="Default Changelist" comment="clean file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsMathTrigono/rotate.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsMathTrigono/rotate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsMathTrigono/boule.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsMathTrigono/boule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsMathTrigono/horloge.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsMathTrigono/horloge.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +56,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -68,15 +67,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,8 +94,17 @@
       <workItem from="1604992966238" duration="12284000" />
       <workItem from="1605025033883" duration="14000" />
       <workItem from="1605781304651" duration="934000" />
-      <workItem from="1605782633182" duration="2150000" />
+      <workItem from="1605782633182" duration="3336000" />
+      <workItem from="1605795023573" duration="5980000" />
     </task>
+    <task id="LOCAL-00001" summary="clean file">
+      <created>1605785397220</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605785397220</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,10 +122,18 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="clean file" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean file" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="838" y="425" width="814" height="380" key="Github.ShareDialog" timestamp="1604982952850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="425" width="814" height="380" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604982952850" />
+    <state x="461" y="172" key="SettingsEditor" timestamp="1605795104477">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="172" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605795104477" />
   </component>
 </project>

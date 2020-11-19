@@ -1,45 +1,52 @@
 import * as rotate from "./rotate.js";
-let  centerRotationX =1000;
-let  centerRotationY =500;
-let initPosX = 1000;
-let initPosY = 200;
-let tab=[0];
-let elemParent = document.getElementById("parent");
-let pointCenter = document.querySelector('#point');
-pointCenter.style.position = "absolute";
-export function horloge(couleur){
-    let index =0;
-    let inc =0;
+
+export function horloge () {
+    let tab = [0];
+    let index = 0;
+    let inc = 0;
     let nx;
     let ny;
-    let id;
-    this.couleur = couleur;
-
-id = setInterval ( () => {
-        if ( index >= (360) ) {
-            clearInterval ( id );
-        } else {
-            let e = document.createElement('p');
-            e.innerHTML = "* "+(inc);
-            elemParent.appendChild(e);
-            nx = rotate.rotate ( centerRotationX,centerRotationY,initPosX,initPosY,-index)[0];
-            ny = rotate.rotate ( centerRotationX,centerRotationY,initPosX,initPosY,-index )[1];
-            let p=document.querySelectorAll("p").item(inc);
-            p.style.position = "absolute";
-            p.style.left = nx+"px";
-            p.style.top = ny+"px";
-            p.style.color = this.couleur;
-            tab.push(nx);
-
-            index+=30;
-            inc++;
-            /***************************/
+    let cadran = {
+        centerRotationX: 1000,
+        centerRotationY: 500,
+        initPosX: 1000,
+        initPosY: 200,
+        couleur: "blue",
+        affCadrand: function () {
+            let elemParent = document.getElementById ( "parent" );
+            let pointCenter = document.querySelector ( '#point' );
             pointCenter.style.position = "absolute";
-            pointCenter.style.left = centerRotationX+"px";
-            pointCenter.style.top = centerRotationY+"px";
+            let e = document.createElement ( 'p' );
+            e.innerHTML = "* " + ( inc );
+            elemParent.appendChild ( e );
+            nx = rotate.rotate ( this.centerRotationX,this.centerRotationY,this.initPosX,this.initPosY,- index )[0];
+            ny = rotate.rotate ( this.centerRotationX,this.centerRotationY,this.initPosX,this.initPosY,- index )[1];
+            let p = document.querySelectorAll ( "p" ).item ( inc );
+            p.style.position = "absolute";
+            p.style.left = nx + "px";
+            p.style.top = ny + "px";
+            p.style.color = this.couleur;
+            pointCenter.style.position = "absolute";
+            pointCenter.style.left = this.centerRotationX + "px";
+            pointCenter.style.top = this.centerRotationY + "px";
+        }
+
+    }
+
+    let id1 = setInterval ( () => {
+        if ( index >= ( 360 ) ) {
+            clearInterval ( id1 );
+        } else {
+            cadran.couleur = "red";
+            cadran.affCadrand ();
+            tab.push ( nx );
+            index += 30;
+            inc ++;
+
 
         }
 
     },0 )
+
 
 }
